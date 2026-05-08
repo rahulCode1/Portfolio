@@ -36,14 +36,16 @@ const Home = () => {
 
           <div className="d-flex gap-3 mt-4">
             <a
-              href="mailto:rahulkumawat50665@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=rahulkumawat50665@gmail.com"
+              target="_blank"
+              rel="noreferrer"
               className="btn btn-success d-flex align-items-center gap-2"
             >
               <MdEmail /> Contact Me
             </a>
 
             <a
-              href="https://drive.google.com/file/d/1qqfnlUhSLMVpn2ZNslw4zEdUv3qD3MNG/view"
+              href="https://drive.google.com/file/d/1tNQ1T86rIDEqvc-uzSPWQfpJNKMg0xFM/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-outline-secondary"
