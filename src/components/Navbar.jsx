@@ -62,7 +62,7 @@ const Navbar = () => {
 
             <li className="nav-item">
               <button
-                className="btn "
+                className="nav-link btn btn-link "
                 onClick={() => scrollToSection("connect")}
               >
                 Connect

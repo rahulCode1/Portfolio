@@ -8,6 +8,7 @@ import {
 import { SiMongodb, SiExpress } from "react-icons/si";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { MdEmail } from "react-icons/md";
+import kaviosPixImg from "../images/kaviospix.png";
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -61,6 +62,7 @@ const Home = () => {
 
           <div className="row mt-4 g-4">
             {/* PROJECT 1 */}
+            {/* Luslina an ecommerce store */}
             <div className="col-md-4">
               <div className="card h-100 shadow-sm">
                 <img
@@ -113,6 +115,7 @@ const Home = () => {
             </div>
 
             {/* PROJECT 2 */}
+            {/* Anavya , lead manage system */}
             <div className="col-md-4">
               <div className="card h-100 shadow-sm">
                 <img
@@ -153,6 +156,124 @@ const Home = () => {
 
                     <a
                       href="https://github.com/rahulCode1/BI_Assignment-1-frontend.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="d-flex align-items-center gap-1 text-decoration-none"
+                    >
+                      <FaGithub /> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* PROJECT 3 */}
+            {/* kaviosPix, Photos sharing app */}
+            <div className="col-md-4">
+              <div className="card h-100 shadow-sm">
+                <img
+                  className="card-img-top"
+                  src={kaviosPixImg}
+                  alt="Travel AI"
+                />
+
+                <div className="card-body">
+                  <h5 className="card-title">kaviosPix</h5>
+
+                  <p className="card-text">
+                    A photo sharing web app, User can create album, save images,
+                    edit and share album.
+                  </p>
+
+                  <div className="mb-3">
+                    <span className="badge rounded-pill text-bg-success m-1">
+                      React
+                    </span>
+                    <span className="badge rounded-pill text-bg-success m-1">
+                      Node.js
+                    </span>
+                    <span className="badge rounded-pill text-bg-success m-1">
+                      MongoDB
+                    </span>
+                    <span className="badge rounded-pill text-bg-success m-1">
+                      express
+                    </span>
+                    <span className="badge rounded-pill text-bg-success m-1">
+                      Google OAuth
+                    </span>
+                  </div>
+
+                  <div className="d-flex gap-3">
+                    <a
+                      href="https://kavios-pix-frontend-eight.vercel.app/albums"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="d-flex align-items-center gap-1 text-decoration-none"
+                    >
+                      <HiOutlineExternalLink /> Demo
+                    </a>
+
+                    <a
+                      href="https://github.com/rahulCode1/kaviosPix_frontend.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="d-flex align-items-center gap-1 text-decoration-none"
+                    >
+                      <FaGithub /> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* PROJECT 4 */}
+            {/* Travel Ai, Ai powered travel planner */}
+            <div className="col-md-4">
+              <div className="card h-100 shadow-sm">
+                <img
+                  className="card-img-top"
+                  src="https://noblestudios.com/wp-content/uploads/ai-travel-planner-1-scaled.webp"
+                  alt="Travel AI"
+                />
+
+                <div className="card-body">
+                  <h5 className="card-title">Travel AI</h5>
+
+                  <p className="card-text">
+                    Travel AI, for generate persionalize travel plan based on
+                    destination, duration and budget.
+                  </p>
+
+                  <div className="mb-3">
+                    <span className="badge rounded-pill text-bg-success m-1">
+                      React
+                    </span>
+                    <span className="badge rounded-pill text-bg-success m-1">
+                      Node.js
+                    </span>
+                    <span className="badge rounded-pill text-bg-success m-1">
+                      MongoDB
+                    </span>
+                    <span className="badge rounded-pill text-bg-success m-1">
+                      express
+                    </span>
+                    <span className="badge rounded-pill text-bg-success m-1">
+                      Google OAuth
+                    </span>
+                  </div>
+
+                  <div className="d-flex gap-3">
+                    <a
+                      href="https://trip-planner-frontend-xd1n.vercel.app"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="d-flex align-items-center gap-1 text-decoration-none"
+                    >
+                      <HiOutlineExternalLink /> Demo
+                    </a>
+
+                    <a
+                      href="https://github.com/rahulCode1/trip_planner_frontend.git"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="d-flex align-items-center gap-1 text-decoration-none"
