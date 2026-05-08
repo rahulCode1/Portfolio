@@ -8,7 +8,6 @@ import {
 import { SiMongodb, SiExpress } from "react-icons/si";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { MdEmail } from "react-icons/md";
-import kaviosPixImg from "../images/kaviospix.png";
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -175,7 +174,7 @@ const Home = () => {
               <div className="card h-100 shadow-sm">
                 <img
                   className="card-img-top"
-                  src={kaviosPixImg}
+                  src="https://sm.pcmag.com/pcmag_au/review/g/google-pho/google-photos_vm2z.jpg"
                   alt="Travel AI"
                 />
 
