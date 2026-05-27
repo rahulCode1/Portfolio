@@ -11,6 +11,7 @@ import { MdEmail } from "react-icons/md";
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import warkasansImg from "../images/Workasana.png";
 
 const Home = () => {
   return (
@@ -275,6 +276,66 @@ const Home = () => {
 
                     <a
                       href="https://github.com/rahulCode1/trip_planner_frontend.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="d-flex align-items-center gap-1 text-decoration-none"
+                    >
+                      <FaGithub /> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* PROJECT 5 */}
+            {/* Workasana */}
+            <div className="col-md-4">
+              <div className="card h-100 shadow-sm">
+                <img
+                  className="card-img-top"
+                  src={warkasansImg}
+                  alt="Travel AI"
+                />
+
+                <div className="card-body">
+                  <h5 className="card-title">Workasana</h5>
+
+                  <p className="card-text">
+                    Built Workasana, a task management platform with task
+                    assignment, and authentication. Added reporting features to
+                    track progress and productivity.
+                  </p>
+
+                  <div className="mb-3">
+                    <span className="badge rounded-pill text-bg-success m-1">
+                      React
+                    </span>
+                    <span className="badge rounded-pill text-bg-success m-1">
+                      Node.js
+                    </span>
+                    <span className="badge rounded-pill text-bg-success m-1">
+                      MongoDB
+                    </span>
+                    <span className="badge rounded-pill text-bg-success m-1">
+                      express
+                    </span>
+                    <span className="badge rounded-pill text-bg-success m-1">
+                      Google OAuth
+                    </span>
+                  </div>
+
+                  <div className="d-flex gap-3">
+                    <a
+                      href="https://fsp-1-assignment-frontend-sigma.vercel.app"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="d-flex align-items-center gap-1 text-decoration-none"
+                    >
+                      <HiOutlineExternalLink /> Demo
+                    </a>
+
+                    <a
+                      href="https://github.com/rahulCode1/FSP1_Assignment_frontend.git"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="d-flex align-items-center gap-1 text-decoration-none"
