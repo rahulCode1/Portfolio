@@ -319,9 +319,7 @@ const Home = () => {
                     <span className="badge rounded-pill text-bg-success m-1">
                       express
                     </span>
-                    <span className="badge rounded-pill text-bg-success m-1">
-                      Google OAuth
-                    </span>
+                 
                   </div>
 
                   <div className="d-flex gap-3">
