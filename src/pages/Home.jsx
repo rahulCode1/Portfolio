@@ -95,7 +95,7 @@ const Home = () => {
 
                   <div className="d-flex gap-3">
                     <a
-                      href="https://major-project-frontend-kappa.vercel.app/"
+                      href="https://luxlina.vercel.app"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="d-flex align-items-center gap-1 text-decoration-none"
@@ -104,7 +104,7 @@ const Home = () => {
                     </a>
 
                     <a
-                      href="https://github.com/rahulCode1/MajorProject-frontend.git"
+                      href="https://github.com/rahulCode1/luxlina.git"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="d-flex align-items-center gap-1 text-decoration-none"
