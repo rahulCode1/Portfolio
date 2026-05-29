@@ -11,7 +11,7 @@ import { MdEmail } from "react-icons/md";
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import warkasansImg from "../images/Workasana.png";
+import taskPilotImg from "../images/TaskPilot.png";
 
 const Home = () => {
   return (
@@ -148,7 +148,7 @@ const Home = () => {
 
                   <div className="d-flex gap-3">
                     <a
-                      href="https://major-project2-frontend-rho.vercel.app/leads"
+                      href="https://crm-flow-sable.vercel.app"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="d-flex align-items-center gap-1 text-decoration-none"
@@ -157,7 +157,7 @@ const Home = () => {
                     </a>
 
                     <a
-                      href="https://github.com/rahulCode1/BI_Assignment-1-frontend.git"
+                      href="https://github.com/rahulCode1/CRMFlow.git"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="d-flex align-items-center gap-1 text-decoration-none"
@@ -207,7 +207,7 @@ const Home = () => {
 
                   <div className="d-flex gap-3">
                     <a
-                      href="https://kavios-pix-frontend-eight.vercel.app/albums"
+                      href="https://cloud-pix-six.vercel.app/albums"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="d-flex align-items-center gap-1 text-decoration-none"
@@ -216,7 +216,7 @@ const Home = () => {
                     </a>
 
                     <a
-                      href="https://github.com/rahulCode1/kaviosPix_frontend.git"
+                      href="https://github.com/rahulCode1/CloudPix.git"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="d-flex align-items-center gap-1 text-decoration-none"
@@ -288,12 +288,12 @@ const Home = () => {
             </div>
 
             {/* PROJECT 5 */}
-            {/* Workasana */}
+            {/* TaskPiolit */}
             <div className="col-md-4">
               <div className="card h-100 shadow-sm">
                 <img
                   className="card-img-top"
-                  src={warkasansImg}
+                  src={taskPilotImg}
                   alt="Travel AI"
                 />
 
@@ -319,12 +319,11 @@ const Home = () => {
                     <span className="badge rounded-pill text-bg-success m-1">
                       express
                     </span>
-                 
                   </div>
 
                   <div className="d-flex gap-3">
                     <a
-                      href="https://fsp-1-assignment-frontend-sigma.vercel.app"
+                      href="https://task-pilot-pearl.vercel.app"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="d-flex align-items-center gap-1 text-decoration-none"
@@ -333,7 +332,7 @@ const Home = () => {
                     </a>
 
                     <a
-                      href="https://github.com/rahulCode1/FSP1_Assignment_frontend.git"
+                      href="https://github.com/rahulCode1/TaskPilot.git"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="d-flex align-items-center gap-1 text-decoration-none"
