@@ -64,7 +64,7 @@ const Home = () => {
 
           <div className="row mt-4 g-4">
             {/* PROJECT 1 */}
-            {/* Luslina an ecommerce store */}
+            {/* Luxlina an ecommerce store */}
             <div className="col-md-4">
               <div className="card h-100 shadow-sm">
                 <img
@@ -117,7 +117,7 @@ const Home = () => {
             </div>
 
             {/* PROJECT 2 */}
-            {/* Anavya , lead manage system */}
+            {/* CRMFlow  , lead manage system */}
             <div className="col-md-4">
               <div className="card h-100 shadow-sm">
                 <img
@@ -127,7 +127,7 @@ const Home = () => {
                 />
 
                 <div className="card-body">
-                  <h5 className="card-title">Anavya</h5>
+                  <h5 className="card-title">CRMFlow </h5>
 
                   <p className="card-text">
                     A lead management system with lead assignment, filtering,
@@ -170,7 +170,7 @@ const Home = () => {
             </div>
 
             {/* PROJECT 3 */}
-            {/* kaviosPix, Photos sharing app */}
+            {/* CloudPix, Photos sharing app */}
             <div className="col-md-4">
               <div className="card h-100 shadow-sm">
                 <img
@@ -180,7 +180,7 @@ const Home = () => {
                 />
 
                 <div className="card-body">
-                  <h5 className="card-title">kaviosPix</h5>
+                  <h5 className="card-title">CloudPix</h5>
 
                   <p className="card-text">
                     A photo sharing web app, User can create album, save images,
@@ -298,10 +298,10 @@ const Home = () => {
                 />
 
                 <div className="card-body">
-                  <h5 className="card-title">Workasana</h5>
+                  <h5 className="card-title">TaskPilot</h5>
 
                   <p className="card-text">
-                    Built Workasana, a task management platform with task
+                    Built TaskPilot, a task management platform with task
                     assignment, and authentication. Added reporting features to
                     track progress and productivity.
                   </p>
