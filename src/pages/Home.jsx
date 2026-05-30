@@ -45,7 +45,7 @@ const Home = () => {
             </a>
 
             <a
-              href="https://drive.google.com/file/d/1tNQ1T86rIDEqvc-uzSPWQfpJNKMg0xFM/view?usp=sharing"
+              href="https://drive.google.com/file/d/1Ya5E_r2gzl2xXn_fVk_nDthse4QkLGps/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-outline-secondary"
