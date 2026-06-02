@@ -30,13 +30,13 @@ const Home = () => {
             using modern technologies.
           </p>
           <p>
-            Proficient in React, Node.js, and MongoDB for scalable and
+            Proficient in React, Node.js, Express.js and MongoDB for scalable and
             user-centric solutions.
           </p>
 
           <div className="d-flex gap-3 mt-4">
             <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=rahulkumawat50665@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=rahul7497678@gmail.com"
               target="_blank"
               rel="noreferrer"
               className="btn btn-success d-flex align-items-center gap-2"
@@ -45,7 +45,7 @@ const Home = () => {
             </a>
 
             <a
-              href="https://drive.google.com/file/d/1Ya5E_r2gzl2xXn_fVk_nDthse4QkLGps/view?usp=sharing"
+              href="https://drive.google.com/file/d/1ebeY1pstXT4EaxvF8Uu7J7q9p0nuZ-Nb/view"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-outline-secondary"
@@ -71,9 +71,10 @@ const Home = () => {
                   className="card-img-top"
                   src="https://caleidoscope.in/wp-content/uploads/2022/11/Indian-Handicrafts-Online.jpg"
                   alt="LUXLINA project"
+                  style={{ height: "220px", width: "100%", objectFit: "cover" }}
                 />
 
-                <div className="card-body">
+                <div className="card-body d-flex flex-column">
                   <h5 className="card-title">LUXLINA</h5>
 
                   <p className="card-text">
@@ -93,7 +94,7 @@ const Home = () => {
                     </span>
                   </div>
 
-                  <div className="d-flex gap-3">
+                  <div className="d-flex gap-3 mt-auto">
                     <a
                       href="https://luxlina.vercel.app"
                       target="_blank"
@@ -124,9 +125,10 @@ const Home = () => {
                   className="card-img-top"
                   src="https://cdn.prod.website-files.com/645258dee17c72222bca47d8/6471c4333090a633cfa2683f_5f56051638262b79b5d580fd_VF-Blog-Cover-What-is-lead-management.jpeg"
                   alt="Anavya project"
+                  style={{ height: "220px", width: "100%", objectFit: "cover" }}
                 />
 
-                <div className="card-body">
+                <div className="card-body d-flex flex-column">
                   <h5 className="card-title">CRMFlow </h5>
 
                   <p className="card-text">
@@ -146,7 +148,7 @@ const Home = () => {
                     </span>
                   </div>
 
-                  <div className="d-flex gap-3">
+                  <div className="d-flex gap-3 mt-auto">
                     <a
                       href="https://crm-flow-sable.vercel.app"
                       target="_blank"
@@ -177,9 +179,10 @@ const Home = () => {
                   className="card-img-top"
                   src="https://sm.pcmag.com/pcmag_au/review/g/google-pho/google-photos_vm2z.jpg"
                   alt="Travel AI"
+                  style={{ height: "220px", width: "100%", objectFit: "cover" }}
                 />
 
-                <div className="card-body">
+                <div className="card-body d-flex flex-column">
                   <h5 className="card-title">CloudPix</h5>
 
                   <p className="card-text">
@@ -205,7 +208,7 @@ const Home = () => {
                     </span>
                   </div>
 
-                  <div className="d-flex gap-3">
+                  <div className="d-flex gap-3 mt-auto">
                     <a
                       href="https://cloud-pix-six.vercel.app/albums"
                       target="_blank"
@@ -236,9 +239,10 @@ const Home = () => {
                   className="card-img-top"
                   src="https://noblestudios.com/wp-content/uploads/ai-travel-planner-1-scaled.webp"
                   alt="Travel AI"
+                  style={{ height: "220px", width: "100%", objectFit: "cover" }}
                 />
 
-                <div className="card-body">
+                <div className="card-body d-flex flex-column">
                   <h5 className="card-title">Travel AI</h5>
 
                   <p className="card-text">
@@ -264,7 +268,7 @@ const Home = () => {
                     </span>
                   </div>
 
-                  <div className="d-flex gap-3">
+                  <div className="d-flex gap-3 mt-auto">
                     <a
                       href="https://trip-planner-frontend-xd1n.vercel.app"
                       target="_blank"
@@ -295,15 +299,16 @@ const Home = () => {
                   className="card-img-top"
                   src={taskPilotImg}
                   alt="Travel AI"
+                  style={{ height: "220px", width: "100%", objectFit: "cover" }}
                 />
 
-                <div className="card-body">
+                <div className="card-body d-flex flex-column">
                   <h5 className="card-title">TaskPilot</h5>
 
                   <p className="card-text">
                     Built TaskPilot, a task management platform with task
-                    assignment, and authentication. Added reporting features to
-                    track progress and productivity.
+                    assignment. Added reporting features to track progress and
+                    productivity.
                   </p>
 
                   <div className="mb-3">
@@ -321,7 +326,7 @@ const Home = () => {
                     </span>
                   </div>
 
-                  <div className="d-flex gap-3">
+                  <div className="d-flex gap-3 mt-auto">
                     <a
                       href="https://task-pilot-pearl.vercel.app"
                       target="_blank"
@@ -387,7 +392,7 @@ const Home = () => {
                 href="mailto:rahulkumawat50665@gmail.com"
                 className="d-flex align-items-center gap-2 text-decoration-none text-success"
               >
-                <MdEmail /> rahulkumawat50665@gmail.com
+                <MdEmail /> rahul7497678@gmail.com
               </a>
             </div>
 
