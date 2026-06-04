@@ -4,6 +4,7 @@ import {
   FaGitAlt,
   FaBootstrap,
   FaGithub,
+  FaLinkedin,
 } from "react-icons/fa";
 import { SiMongodb, SiExpress } from "react-icons/si";
 import { HiOutlineExternalLink } from "react-icons/hi";
@@ -30,8 +31,8 @@ const Home = () => {
             using modern technologies.
           </p>
           <p>
-            Proficient in React, Node.js, Express.js and MongoDB for scalable and
-            user-centric solutions.
+            Proficient in React, Node.js, Express.js and MongoDB for scalable
+            and user-centric solutions.
           </p>
 
           <div className="d-flex gap-3 mt-4">
@@ -389,14 +390,17 @@ const Home = () => {
             <div className="mb-3">
               <h5>Email</h5>
               <a
-                href="mailto:rahulkumawat50665@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=rahul7497678@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="d-flex align-items-center gap-2 text-decoration-none text-success"
               >
-                <MdEmail /> rahul7497678@gmail.com
+                <MdEmail />
+                rahul7497678@gmail.com
               </a>
             </div>
 
-            <div>
+            <div className="mb-3">
               <h5>GitHub</h5>
               <a
                 href="https://github.com/rahulCode1"
@@ -405,6 +409,17 @@ const Home = () => {
                 className="d-flex align-items-center gap-2 text-decoration-none"
               >
                 <FaGithub /> Follow on GitHub
+              </a>
+            </div>
+            <div className="mb-3">
+              <h5>Linkedin</h5>
+              <a
+                href="https://www.linkedin.com/in/rahul-kumawat-562026413"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="d-flex align-items-center gap-2 text-decoration-none"
+              >
+                <FaLinkedin /> Connect on Linkedin
               </a>
             </div>
           </div>
