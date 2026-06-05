@@ -5,6 +5,7 @@ import {
   FaBootstrap,
   FaGithub,
   FaLinkedin,
+  FaArrowUp,
 } from "react-icons/fa";
 import { SiMongodb, SiExpress } from "react-icons/si";
 import { HiOutlineExternalLink } from "react-icons/hi";
@@ -13,8 +14,35 @@ import { MdEmail } from "react-icons/md";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import taskPilotImg from "../images/TaskPilot.png";
+import { useEffect, useState } from "react";
 
 const Home = () => {
+  const [isShowGoToTopBtn, setShowGoToTopButton] = useState(false);
+
+  const scrollSection = (id) => {
+    const element = document.getElementById(id);
+
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  useEffect(() => {
+      const handleScroll = () => {
+      setShowGoToTopButton(window.scrollY > 300);
+     
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return ()=>{
+      window.removeEventListener("scroll", handleScroll);
+    }
+  }, []);
+
+
+  
+
   return (
     <>
       <Navbar />
@@ -36,14 +64,12 @@ const Home = () => {
           </p>
 
           <div className="d-flex gap-3 mt-4">
-            <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=rahul7497678@gmail.com"
-              target="_blank"
-              rel="noreferrer"
+            <button
+              onClick={() => scrollSection("connect")}
               className="btn btn-success d-flex align-items-center gap-2"
             >
-              <MdEmail /> Contact Me
-            </a>
+              Contact Me
+            </button>
 
             <a
               href="https://drive.google.com/file/d/1ebeY1pstXT4EaxvF8Uu7J7q9p0nuZ-Nb/view"
@@ -66,7 +92,7 @@ const Home = () => {
           <div className="row mt-4 g-4">
             {/* PROJECT 1 */}
             {/* Luxlina an ecommerce store */}
-            <div className="col-md-4">
+            <div className="col-sm-6 col-lg-4">
               <div className="card h-100 shadow-sm">
                 <img
                   className="card-img-top"
@@ -120,7 +146,7 @@ const Home = () => {
 
             {/* PROJECT 2 */}
             {/* CRMFlow  , lead manage system */}
-            <div className="col-md-4">
+            <div className="col-sm-6 col-lg-4">
               <div className="card h-100 shadow-sm">
                 <img
                   className="card-img-top"
@@ -174,7 +200,7 @@ const Home = () => {
 
             {/* PROJECT 3 */}
             {/* CloudPix, Photos sharing app */}
-            <div className="col-md-4">
+            <div className="col-sm-6 col-lg-4">
               <div className="card h-100 shadow-sm">
                 <img
                   className="card-img-top"
@@ -234,7 +260,7 @@ const Home = () => {
 
             {/* PROJECT 4 */}
             {/* Travel Ai, Ai powered travel planner */}
-            <div className="col-md-4">
+            <div className="col-sm-6 col-lg-4">
               <div className="card h-100 shadow-sm">
                 <img
                   className="card-img-top"
@@ -294,7 +320,7 @@ const Home = () => {
 
             {/* PROJECT 5 */}
             {/* TaskPiolit */}
-            <div className="col-md-4">
+            <div className="col-sm-6 col-lg-4">
               <div className="card h-100 shadow-sm">
                 <img
                   className="card-img-top"
@@ -424,6 +450,26 @@ const Home = () => {
             </div>
           </div>
         </section>
+
+        {isShowGoToTopBtn && (
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            style={{
+              position: "fixed",
+              bottom: "40px",
+              border: "none",
+              width: "50px",
+              height: "50px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              opacity: "0.6",
+            }}
+            className="btn btn-primary rounded-circle shadow end-0 mx-2 mx-md-5"
+          >
+            <FaArrowUp />
+          </button>
+        )}
       </main>
 
       <Footer />
