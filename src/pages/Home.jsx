@@ -233,7 +233,7 @@ const Home = () => {
 
                   <div className="d-flex gap-3 mt-auto">
                     <a
-                      href="https://cloud-pix-six.vercel.app/albums"
+                      href="https://cloud-pix-six.vercel.app"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="d-flex align-items-center gap-1 text-decoration-none"

@@ -32,9 +32,9 @@ Passionate full-stack developer building intuitive web applications using modern
 
 ```
 git clone https://github.com/rahulCode1/Portfolio.git
-cd portfolio
+cd Portfolio
 npm install
-npm run dev
+npm start
 ```
 
 ## Contact
