@@ -28,20 +28,16 @@ const Home = () => {
   };
 
   useEffect(() => {
-      const handleScroll = () => {
+    const handleScroll = () => {
       setShowGoToTopButton(window.scrollY > 300);
-     
     };
 
     window.addEventListener("scroll", handleScroll);
 
-    return ()=>{
+    return () => {
       window.removeEventListener("scroll", handleScroll);
-    }
+    };
   }, []);
-
-
-  
 
   return (
     <>
@@ -297,7 +293,7 @@ const Home = () => {
 
                   <div className="d-flex gap-3 mt-auto">
                     <a
-                      href="https://trip-planner-frontend-xd1n.vercel.app"
+                      href="https://travel-ai-eight-tau.vercel.app"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="d-flex align-items-center gap-1 text-decoration-none"
@@ -306,7 +302,7 @@ const Home = () => {
                     </a>
 
                     <a
-                      href="https://github.com/rahulCode1/trip_planner_frontend.git"
+                      href="https://github.com/rahulCode1/Travel_AI.git"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="d-flex align-items-center gap-1 text-decoration-none"
