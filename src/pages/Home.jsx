@@ -108,7 +108,7 @@ const Home = () => {
 
           <div
             className=" border-bottom border-3 border-success d-inline-block "
-            style={{ width: "15vw", height: "10px" }}
+            style={{ width: "8vw", height: "10px" }}
           ></div>
 
           <p className="mt-3 ">
@@ -148,7 +148,7 @@ const Home = () => {
 
           <div
             className=" border-bottom border-3 border-success d-inline-block "
-            style={{ width: "15vw", height: "10px" }}
+            style={{ width: "8vw", height: "10px" }}
           ></div>
 
           <div className="row mt-5 g-4">
@@ -242,7 +242,7 @@ const Home = () => {
 
           <div
             className=" border-bottom border-3 border-success d-inline-block "
-            style={{ width: "15vw", height: "10px" }}
+            style={{ width: "8vw", height: "10px" }}
           ></div>
 
           <div className="d-flex flex-wrap gap-3 mt-5">
@@ -263,12 +263,12 @@ const Home = () => {
 
           <div
             className=" border-bottom border-3 border-success d-inline-block "
-            style={{ width: "15vw", height: "10px" }}
+            style={{ width: "8vw", height: "10px" }}
           ></div>
 
           <div className="mt-4 d-flex flex-wrap row gap-2 justify-content-between">
             <div
-              className="border border-2 p-3 rounded shadow"
+              className="border border-2 p-3 rounded shadow mb-3"
               style={{ width: "49%" }}
             >
               <h4 className="d-flex align-items-center gap-3">
@@ -286,7 +286,7 @@ const Home = () => {
             </div>
 
             <div
-              className="border border-2 p-3 rounded shadow"
+              className="border border-2 p-3 rounded shadow mb-3"
               style={{ width: "49%" }}
             >
               <h4 className="d-flex align-items-center gap-3">
@@ -303,7 +303,7 @@ const Home = () => {
               </a>
             </div>
             <div
-              className="border border-2 p-3 rounded shadow"
+              className="border border-2 p-3 rounded shadow mb-3"
               style={{ width: "49%" }}
             >
               <h4 className="d-flex align-items-center gap-3">
