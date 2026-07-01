@@ -111,13 +111,13 @@ const Home = () => {
             style={{ width: "8vw", height: "10px" }}
           ></div>
 
-          <p className="mt-3 ">
-            Passionate full-stack developer building intuitive web applications
-            using modern technologies.
+          <p className="mt-3">
+            MERN Stack Developer passionate about building responsive, scalable,
+            and user-friendly web applications.
           </p>
           <p>
-            Proficient in React, Node.js, Express.js and MongoDB for scalable
-            and user-centric solutions.
+            Skilled in React, Node.js, Express.js, and MongoDB, with hands-on
+            experience developing full-stack projects and REST APIs.
           </p>
 
           <div className="d-flex gap-3 mt-4">
