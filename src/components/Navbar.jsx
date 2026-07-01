@@ -14,7 +14,7 @@ const Navbar = () => {
           className="navbar-brand fw-bold cursor-pointer"
           onClick={() => scrollToSection("home")}
         >
-          Rahul
+          Rahul Kumawat 
         </span>
 
         {/* TOGGLER */}

@@ -7,14 +7,21 @@ import {
   FaLinkedin,
   FaArrowUp,
 } from "react-icons/fa";
-import { SiMongodb, SiExpress } from "react-icons/si";
-import { HiOutlineExternalLink } from "react-icons/hi";
+import {
+  SiMongodb,
+  SiExpress,
+  SiTailwindcss,
+  SiJsonwebtokens,
+  SiMongoose,
+  SiVercel,
+} from "react-icons/si";
 import { MdEmail } from "react-icons/md";
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import taskPilotImg from "../images/TaskPilot.png";
 import { useEffect, useState } from "react";
+import Project from "../components/Projects/Project";
 
 const Home = () => {
   const [isShowGoToTopBtn, setShowGoToTopButton] = useState(false);
@@ -26,6 +33,55 @@ const Home = () => {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  const techStacks = [
+    {
+      skill: "React",
+      icon: FaReact,
+    },
+    {
+      skill: "Node.js",
+      icon: FaNodeJs,
+    },
+    {
+      skill: "Express",
+      icon: SiExpress,
+    },
+    {
+      skill: "MongoDB",
+      icon: SiMongodb,
+    },
+    {
+      skill: "Bootstrap",
+      icon: FaBootstrap,
+    },
+
+    { skill: "Git", icon: FaGitAlt },
+    {
+      skill: "GitHub",
+      icon: FaGithub,
+    },
+    {
+      skill: "Tailwind CSS",
+      icon: SiTailwindcss,
+    },
+    {
+      skill: "Mongoose",
+      icon: SiMongoose,
+    },
+    {
+      skill: "JWT",
+      icon: SiJsonwebtokens,
+    },
+    {
+      skill: "Vercel",
+      icon: SiVercel,
+    },
+    {
+      skill: "Vercel",
+      icon: SiVercel,
+    },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -45,12 +101,17 @@ const Home = () => {
 
       <main className="container">
         {/* HERO SECTION */}
-        <section className="py-5" id="home">
-          <h1>Rahul Kumawat</h1>
+        <section className="py-5 mt-5" id="home">
+          <h1 className="fw-bold">Rahul Kumawat</h1>
 
-          <h3 className="text-muted">Full Stack Developer</h3>
+          <h3 className="text-muted fs-5 mt-3 ">Full Stack Developer</h3>
 
-          <p className="mt-3">
+          <div
+            className=" border-bottom border-3 border-success d-inline-block "
+            style={{ width: "15vw", height: "10px" }}
+          ></div>
+
+          <p className="mt-3 ">
             Passionate full-stack developer building intuitive web applications
             using modern technologies.
           </p>
@@ -79,369 +140,183 @@ const Home = () => {
         </section>
 
         {/* PROJECTS SECTION */}
-        <section id="projects" className="py-5">
-          <h1>Projects</h1>
-          <h5 className="text-muted">
+        <section id="projects" className="py-5 mt-5">
+          <h1 className="fw-bold">Projects</h1>
+          <h5 className="text-muted fs-5">
             Building solutions that solve real-world problems
           </h5>
 
-          <div className="row mt-4 g-4">
+          <div
+            className=" border-bottom border-3 border-success d-inline-block "
+            style={{ width: "15vw", height: "10px" }}
+          ></div>
+
+          <div className="row mt-5 g-4">
             {/* PROJECT 1 */}
             {/* Luxlina an ecommerce store */}
-            <div className="col-sm-6 col-lg-4">
-              <div className="card h-100 shadow-sm">
-                <img
-                  className="card-img-top"
-                  src="https://caleidoscope.in/wp-content/uploads/2022/11/Indian-Handicrafts-Online.jpg"
-                  alt="LUXLINA project"
-                  style={{ height: "220px", width: "100%", objectFit: "cover" }}
-                />
 
-                <div className="card-body d-flex flex-column">
-                  <h5 className="card-title">LUXLINA</h5>
-
-                  <p className="card-text">
-                    A modern e-commerce platform with product management,
-                    authentication, and order handling.
-                  </p>
-
-                  <div className="mb-3">
-                    <span className="badge rounded-pill text-bg-success m-1">
-                      React
-                    </span>
-                    <span className="badge rounded-pill text-bg-success m-1">
-                      Node.js
-                    </span>
-                    <span className="badge rounded-pill text-bg-success m-1">
-                      MongoDB
-                    </span>
-                  </div>
-
-                  <div className="d-flex gap-3 mt-auto">
-                    <a
-                      href="https://luxlina.vercel.app"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="d-flex align-items-center gap-1 text-decoration-none"
-                    >
-                      <HiOutlineExternalLink /> Demo
-                    </a>
-
-                    <a
-                      href="https://github.com/rahulCode1/luxlina.git"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="d-flex align-items-center gap-1 text-decoration-none"
-                    >
-                      <FaGithub /> Code
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Project
+              title="LUXLINA"
+              description=" A modern e-commerce platform with product management,
+                    authentication, and order handling."
+              projectImgCover={
+                "https://caleidoscope.in/wp-content/uploads/2022/11/Indian-Handicrafts-Online.jpg"
+              }
+              demoLink={"https://luxlina.vercel.app"}
+              gitHubLink={"https://github.com/rahulCode1/luxlina.git"}
+              tech={["React", "Node.js", "Express.js", "MongoDB", "JWT"]}
+            />
 
             {/* PROJECT 2 */}
-            {/* CRMFlow  , lead manage system */}
-            <div className="col-sm-6 col-lg-4">
-              <div className="card h-100 shadow-sm">
-                <img
-                  className="card-img-top"
-                  src="https://cdn.prod.website-files.com/645258dee17c72222bca47d8/6471c4333090a633cfa2683f_5f56051638262b79b5d580fd_VF-Blog-Cover-What-is-lead-management.jpeg"
-                  alt="Anavya project"
-                  style={{ height: "220px", width: "100%", objectFit: "cover" }}
-                />
-
-                <div className="card-body d-flex flex-column">
-                  <h5 className="card-title">CRMFlow </h5>
-
-                  <p className="card-text">
-                    A lead management system with lead assignment, filtering,
-                    status tracking, and secure CRUD operations.
-                  </p>
-
-                  <div className="mb-3">
-                    <span className="badge rounded-pill text-bg-success m-1">
-                      React
-                    </span>
-                    <span className="badge rounded-pill text-bg-success m-1">
-                      Node.js
-                    </span>
-                    <span className="badge rounded-pill text-bg-success m-1">
-                      MongoDB
-                    </span>
-                  </div>
-
-                  <div className="d-flex gap-3 mt-auto">
-                    <a
-                      href="https://crm-flow-sable.vercel.app"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="d-flex align-items-center gap-1 text-decoration-none"
-                    >
-                      <HiOutlineExternalLink /> Demo
-                    </a>
-
-                    <a
-                      href="https://github.com/rahulCode1/CRMFlow.git"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="d-flex align-items-center gap-1 text-decoration-none"
-                    >
-                      <FaGithub /> Code
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            {/* CRMFlow */}
+            <Project
+              title="CRMFlow"
+              description="A modern lead management platform with lead assignment, status tracking, filtering, reporting, and secure CRUD operations."
+              projectImgCover={
+                "https://cdn.prod.website-files.com/645258dee17c72222bca47d8/6471c4333090a633cfa2683f_5f56051638262b79b5d580fd_VF-Blog-Cover-What-is-lead-management.jpeg"
+              }
+              demoLink={"https://crm-flow-sable.vercel.app"}
+              gitHubLink={"https://github.com/rahulCode1/CRMFlow.git"}
+              tech={["React", "Node.js", "Express.js", "MongoDB", "JWT"]}
+            />
 
             {/* PROJECT 3 */}
-            {/* CloudPix, Photos sharing app */}
-            <div className="col-sm-6 col-lg-4">
-              <div className="card h-100 shadow-sm">
-                <img
-                  className="card-img-top"
-                  src="https://sm.pcmag.com/pcmag_au/review/g/google-pho/google-photos_vm2z.jpg"
-                  alt="Travel AI"
-                  style={{ height: "220px", width: "100%", objectFit: "cover" }}
-                />
-
-                <div className="card-body d-flex flex-column">
-                  <h5 className="card-title">CloudPix</h5>
-
-                  <p className="card-text">
-                    A photo sharing web app, User can create album, save images,
-                    edit and share album.
-                  </p>
-
-                  <div className="mb-3">
-                    <span className="badge rounded-pill text-bg-success m-1">
-                      React
-                    </span>
-                    <span className="badge rounded-pill text-bg-success m-1">
-                      Node.js
-                    </span>
-                    <span className="badge rounded-pill text-bg-success m-1">
-                      MongoDB
-                    </span>
-                    <span className="badge rounded-pill text-bg-success m-1">
-                      express
-                    </span>
-                    <span className="badge rounded-pill text-bg-success m-1">
-                      Google OAuth
-                    </span>
-                  </div>
-
-                  <div className="d-flex gap-3 mt-auto">
-                    <a
-                      href="https://cloud-pix-six.vercel.app"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="d-flex align-items-center gap-1 text-decoration-none"
-                    >
-                      <HiOutlineExternalLink /> Demo
-                    </a>
-
-                    <a
-                      href="https://github.com/rahulCode1/CloudPix.git"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="d-flex align-items-center gap-1 text-decoration-none"
-                    >
-                      <FaGithub /> Code
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            {/* CloudPix */}
+            <Project
+              title="CloudPix"
+              description="A modern photo sharing platform with album management, Cloudinary image uploads, Google OAuth authentication, and secure sharing."
+              projectImgCover={
+                "https://sm.pcmag.com/pcmag_au/review/g/google-pho/google-photos_vm2z.jpg"
+              }
+              demoLink={"https://cloud-pix-six.vercel.app"}
+              gitHubLink={"https://github.com/rahulCode1/CloudPix.git"}
+              tech={[
+                "React",
+                "Node.js",
+                "Express.js",
+                "MongoDB",
+                "Cloudinary",
+                "Google OAuth",
+              ]}
+            />
 
             {/* PROJECT 4 */}
-            {/* Travel Ai, Ai powered travel planner */}
-            <div className="col-sm-6 col-lg-4">
-              <div className="card h-100 shadow-sm">
-                <img
-                  className="card-img-top"
-                  src="https://noblestudios.com/wp-content/uploads/ai-travel-planner-1-scaled.webp"
-                  alt="Travel AI"
-                  style={{ height: "220px", width: "100%", objectFit: "cover" }}
-                />
-
-                <div className="card-body d-flex flex-column">
-                  <h5 className="card-title">Travel AI</h5>
-
-                  <p className="card-text">
-                    Travel AI, for generate persionalize travel plan based on
-                    destination, duration and budget.
-                  </p>
-
-                  <div className="mb-3">
-                    <span className="badge rounded-pill text-bg-success m-1">
-                      React
-                    </span>
-                    <span className="badge rounded-pill text-bg-success m-1">
-                      Node.js
-                    </span>
-                    <span className="badge rounded-pill text-bg-success m-1">
-                      MongoDB
-                    </span>
-                    <span className="badge rounded-pill text-bg-success m-1">
-                      express
-                    </span>
-                    <span className="badge rounded-pill text-bg-success m-1">
-                      Google OAuth
-                    </span>
-                  </div>
-
-                  <div className="d-flex gap-3 mt-auto">
-                    <a
-                      href="https://travel-ai-eight-tau.vercel.app"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="d-flex align-items-center gap-1 text-decoration-none"
-                    >
-                      <HiOutlineExternalLink /> Demo
-                    </a>
-
-                    <a
-                      href="https://github.com/rahulCode1/Travel_AI.git"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="d-flex align-items-center gap-1 text-decoration-none"
-                    >
-                      <FaGithub /> Code
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            {/* Travel AI */}
+            <Project
+              title="Travel AI"
+              description="An AI-powered travel planner that generates personalized itineraries based on destination, budget, and trip duration."
+              projectImgCover={
+                "https://noblestudios.com/wp-content/uploads/ai-travel-planner-1-scaled.webp"
+              }
+              demoLink={"https://travel-ai-eight-tau.vercel.app"}
+              gitHubLink={"https://github.com/rahulCode1/Travel_AI.git"}
+              tech={[
+                "React",
+                "Node.js",
+                "Express.js",
+                "MongoDB",
+                "Mapbox",
+                "DeepSeek AI",
+              ]}
+            />
 
             {/* PROJECT 5 */}
-            {/* TaskPiolit */}
-            <div className="col-sm-6 col-lg-4">
-              <div className="card h-100 shadow-sm">
-                <img
-                  className="card-img-top"
-                  src={taskPilotImg}
-                  alt="Travel AI"
-                  style={{ height: "220px", width: "100%", objectFit: "cover" }}
-                />
-
-                <div className="card-body d-flex flex-column">
-                  <h5 className="card-title">TaskPilot</h5>
-
-                  <p className="card-text">
-                    Built TaskPilot, a task management platform with task
-                    assignment. Added reporting features to track progress and
-                    productivity.
-                  </p>
-
-                  <div className="mb-3">
-                    <span className="badge rounded-pill text-bg-success m-1">
-                      React
-                    </span>
-                    <span className="badge rounded-pill text-bg-success m-1">
-                      Node.js
-                    </span>
-                    <span className="badge rounded-pill text-bg-success m-1">
-                      MongoDB
-                    </span>
-                    <span className="badge rounded-pill text-bg-success m-1">
-                      express
-                    </span>
-                  </div>
-
-                  <div className="d-flex gap-3 mt-auto">
-                    <a
-                      href="https://task-pilot-pearl.vercel.app"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="d-flex align-items-center gap-1 text-decoration-none"
-                    >
-                      <HiOutlineExternalLink /> Demo
-                    </a>
-
-                    <a
-                      href="https://github.com/rahulCode1/TaskPilot.git"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="d-flex align-items-center gap-1 text-decoration-none"
-                    >
-                      <FaGithub /> Code
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            {/* TaskPilot */}
+            <Project
+              title="TaskPilot"
+              description="A modern task management platform with project organization, task assignment, progress tracking, and productivity reporting."
+              projectImgCover={taskPilotImg}
+              demoLink={"https://task-pilot-pearl.vercel.app"}
+              gitHubLink={"https://github.com/rahulCode1/TaskPilot.git"}
+              tech={["React", "Node.js", "Express.js", "MongoDB", "JWT"]}
+            />
           </div>
         </section>
 
         {/* TECH STACK */}
         <section id="skills" className="py-5">
-          <h1>Tech Stack</h1>
-          <h3 className="text-muted">Technologies and tools I work with</h3>
+          <h1 className="fw-bold">Tech Stack</h1>
+          <h3 className="text-muted fs-5">
+            Technologies and tools I work with
+          </h3>
 
-          <div className="d-flex flex-wrap gap-2 mt-3">
-            <span className="badge rounded-pill border border-success text-success d-flex align-items-center gap-1">
-              <FaReact /> React
-            </span>
-            <span className="badge rounded-pill border border-success text-success d-flex align-items-center gap-1">
-              <FaNodeJs /> Node.js
-            </span>
-            <span className="badge rounded-pill border border-success text-success d-flex align-items-center gap-1">
-              <SiExpress /> Express
-            </span>
-            <span className="badge rounded-pill border border-success text-success d-flex align-items-center gap-1">
-              <SiMongodb /> MongoDB
-            </span>
-            <span className="badge rounded-pill border border-success text-success d-flex align-items-center gap-1">
-              <FaBootstrap /> Bootstrap
-            </span>
-            <span className="badge rounded-pill border border-success text-success d-flex align-items-center gap-1">
-              <FaGitAlt /> Git
-            </span>
+          <div
+            className=" border-bottom border-3 border-success d-inline-block "
+            style={{ width: "15vw", height: "10px" }}
+          ></div>
+
+          <div className="d-flex flex-wrap gap-3 mt-5">
+            {techStacks.map((tech) => (
+              <span className="badge fs-5 border border-dark text-dark d-flex align-items-center gap-3">
+                <tech.icon /> {tech.skill}
+              </span>
+            ))}
           </div>
         </section>
 
         {/* CONNECT */}
         <section id="connect" className="py-5">
-          <h1>Connect</h1>
-          <h3 className="text-muted">
+          <h1 className="fw-bold">Connect</h1>
+          <h3 className="text-muted fs-5">
             Let’s collaborate on something amazing together
           </h3>
 
-          <div className="mt-3">
-            <div className="mb-3">
-              <h5>Email</h5>
+          <div
+            className=" border-bottom border-3 border-success d-inline-block "
+            style={{ width: "15vw", height: "10px" }}
+          ></div>
+
+          <div className="mt-4 d-flex flex-wrap row gap-2 justify-content-between">
+            <div
+              className="border border-2 p-3 rounded shadow"
+              style={{ width: "49%" }}
+            >
+              <h4 className="d-flex align-items-center gap-3">
+                <MdEmail size={34} /> Email
+              </h4>
+
               <a
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=rahul7497678@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="d-flex align-items-center gap-2 text-decoration-none text-success"
+                className="d-flex align-items-center fw-bold gap-2 text-decoration-none text-success"
               >
-                <MdEmail />
                 rahul7497678@gmail.com
               </a>
             </div>
 
-            <div className="mb-3">
-              <h5>GitHub</h5>
+            <div
+              className="border border-2 p-3 rounded shadow"
+              style={{ width: "49%" }}
+            >
+              <h4 className="d-flex align-items-center gap-3">
+                <FaGithub size={34} /> GitHub
+              </h4>
+
               <a
                 href="https://github.com/rahulCode1"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="d-flex align-items-center gap-2 text-decoration-none"
+                className="d-flex align-items-center fw-bold gap-2 text-decoration-none text-success"
               >
-                <FaGithub /> Follow on GitHub
+                Follow on GitHub
               </a>
             </div>
-            <div className="mb-3">
-              <h5>Linkedin</h5>
+            <div
+              className="border border-2 p-3 rounded shadow"
+              style={{ width: "49%" }}
+            >
+              <h4 className="d-flex align-items-center gap-3">
+                <FaLinkedin size={34} /> Linkedin
+              </h4>
+
               <a
                 href="https://www.linkedin.com/in/rahul-kumawat-562026413"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="d-flex align-items-center gap-2 text-decoration-none"
+                className="d-flex align-items-center fw-bold gap-2 text-decoration-none text-success"
               >
-                <FaLinkedin /> Connect on Linkedin
+                Connect on Linkedin
               </a>
             </div>
           </div>
