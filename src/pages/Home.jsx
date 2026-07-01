@@ -77,10 +77,7 @@ const Home = () => {
       skill: "Vercel",
       icon: SiVercel,
     },
-    {
-      skill: "Vercel",
-      icon: SiVercel,
-    },
+   
   ];
 
   useEffect(() => {
